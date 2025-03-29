@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uitrgpv</title>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+       
+        
+        .nav{
+             background-color: orange;
+           
+             height: 33px;
+             display: flex;
+            align-items: center;
+            justify-content: space-between;
+     
+        }
+        .feed
+        {
+            cursor: pointer;
+           
+        }
+     
+             .alphabet span{
+                padding: 2px;
+                cursor: pointer;
+             }
+             .alphabet button {
+  font-family: "Verdana", sans-serif;
+  font-size: 14px;
+  color: black;
+  background: linear-gradient(180deg, #d9d9d9, #a5a5a5);
+  border: 2px solid #4d4d4d;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  box-shadow: inset -2px -2px 0px #ffffff, inset 2px 2px 0px #4d4d4d;
+  cursor: pointer;
+  outline: none;
+}
+
+.alphabet-button:active {
+  background: linear-gradient(180deg, #a5a5a5, #d9d9d9);
+  box-shadow: inset -2px -2px 0px #4d4d4d, inset 2px 2px 0px #ffffff;
+}
+    
+       
+        
+     
+        
+        .second{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .third{background-color: #184852;
+            list-style-type: none;
+            padding: 0;
+            height: 33px;
+            color: white;
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        gap: 33px;}
+        
+        .paras div{padding: 3px;
+            margin: 3px;}
+            .welcome{    background: linear-gradient(rgba(4, 3, 20, 0.89), rgb(24, 72, 82));
+                color: aliceblue;
+        }
+        .paras { border: solid rgb(240, 237, 237);}
+           
+
+            
+        .forth   h2{
+            padding: 43px;
+            margin: 3px;
+        }
+        
+        .forth  p{
+            padding: 33px;
+            margin: 3px;
+        }
+        .forth{
+            display: flex;
+       
+        }
+     
+        .box{
+            /* border: solid rgb(132, 125, 125); */
+            display: grid;
+            padding: 8px;
+            margin:23px;
+            gap: 15px;
+            cursor: pointer;
+            transition: all 0.6s linear 0s;
+            
+        }
+       .info{margin: 5px;
+    padding: 23px;}
+        .box:hover{
+            transform: scale(1.1);
+        }
+        .info button:hover{
+            transform: scale(1.1);
+
+        }
+        .container{     background: linear-gradient(135deg, rgb(24 72 82) 0, rgb(0 140 169) 40%, rgb(24 72 82) 65%, rgb(236 51 56) 100%);
+            flex-wrap: wrap;
+        display: flex;
+    justify-content: center;
+align-items: center;}
+        .part {
+            padding: 23px;
+            margin: 23px;
+           
+        }
+        .img img{
+            height: 310px;
+            padding: 24px;
+            margin: 1px 3px;
+        }
+        .subject{ 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            padding: 13px;
+            gap: 245px;
+        }
+        .rows{
+            display: flex;
+            gap: 3px;
+            justify-content: center;
+            align-items: center;
+           
+           
+           
+
+        }
+        .boxes{ color: white;
+        font-size: 14px;}
+        .rows button{
+            font-family: "Verdana", sans-serif;
+            height: 100px;
+            width: 300px;
+            border-radius: 10px;
+            background-color: #184852;
+            border: 2px solid white;
+            cursor: pointer;
+           
+        }
+       
+       
+        button:hover{transform: scale(1.1);}
+        .message{
+            display: flex;
+        }
+        .director{
+            padding: 93px;
+    padding: 23px 0px;
+    margin: 7px 70px
+        }
+        .director img{
+            width: 350px;
+            padding: 0 33px;
+           
+        }
+      .director h2 {
+         color: rgb(9, 28, 83);
+      }
+      .director  div{
+         background-color: red;
+         color: white;
+         font-size: large;
+      }
+    .main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 1px; 
+}
+
+.square {
+    background: linear-gradient(135deg, rgb(23, 73, 83) 0px, rgb(3, 133, 161) 30%, rgb(20, 84, 97) 60%, rgb(3, 131, 159) 100%);
+    text-align: center;
+    border: 1px solid black;
+    height: 300px;
+}
+ .heading{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: rgb(8, 42, 92);
+     font-size: 25px;
+ }
+   .main img { 
+         height: 300px;
+         width: 370px;
+   }
+     .square{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 20px;
+              cursor: pointer;
+     }  
+       .square div{
+
+         border: 2px solid white;
+         background-color: none;
+         color: white;
+         border-radius: 8px;
+         padding: 3px;
+         margin: 10px;
+         cursor: pointer;
+       }
+       .square div:hover{
+        transform: scaleX(1.1);
+        background-color: white;
+        color: black;
+       }
+        .rgpv{
+            opacity: 0.5;
+            position: absolute;}
+            
+ 
+         
+        
+          .rgpv img{
+            width: 1493px;
+         } 
+      
+                        .line{background: url(slide_b2.jpg);
+                        background-attachment: fixed;
+
+                    color: white;
+                  
+                padding: 50px;
+                position: relative;
+            }
+            .line::before{
+                content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 36, 42, 0.85);
+    z-index: 1;
+
+            }
+            .line
+            .line-text{
+                 
+    font-weight: bold;
+    font-size: 1.3rem; 
+    color: white; 
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); 
+
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    
+}
+.photos{overflow: scroll;}
+            
+            /* .line-content{
+                position: absolute;
+                z-index: 2;
+                color: white;
+            } */
+           .line div{
+           
+                      padding: 24px;
+           margin: 13px;  }   
+           .last{
+             display: flex;
+             padding: 23px;
+             gap: 99px;
+             list-style-type: none;
+             background-color: #184852;
+
+            
+        }
+        .column{cursor: pointer;
+            font-size: larger;}
+        .column1{cursor: pointer;
+            font-size: larger;}
+        .column2{cursor: pointer;
+            font-size: larger;}
+        .column3{cursor: pointer;
+            background-color: white;
+            list-style: none;
+            opacity: 0.8;
+            }
+            .column4{background-color: #184852;
+            width: 220px;
+        display: flex;
+    align-items: center;
+justify-content: center;}
+           .final{
+             display: flex;
+         
+            
+         
+           }
+           .footer{
+            display: flex;
+           justify-content: space-around;
+            align-items: center;
+            gap: 83px;
+            background-color: #0a262c;;
+            color: white;
+            height: 53px;
+            padding: 4px;
+            margin: 3px;
+            
+           }
+           .footer1{
+            cursor: pointer;
+           }
+           .footer2{
+            cursor: pointer;
+           }
+          .footer3{
+            cursor: pointer;
+           }
+
+           .container img:hover{transform: scale(1.1);
+        
+             transition: transform 0.3s ease-in-out;
+             color: rgb(23, 22, 22);
+             filter: brightness(50%);
+
+           }
+           .box span{
+             
+    width: 80px;
+    font-size: 40px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: rgb(237, 51, 54);
+    box-shadow: rgba(238, 238, 238, 0.22) 0px 5px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
+    border-radius: 50%;
+    background: rgba(150, 181, 132, 0.228);
+    transition: 400ms ease-in-out;
+
+           }
+       
+           @media (max-width: 637px) {
+            .third li {
+                flex: 1 1 45%; 
+            }
+        }
+@media screen and (max-width: 1300px) {
+    .nav {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .alphabet button,
+    .alphabet span {
+        margin: 5px 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .second {
+        flex-direction: column;
+        text-align: center;
+       
+    }
+    .photos{overflow: scroll;
+      transition-duration: 2s;
+        
+    }
+
+    .third {
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .third li {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .welcome h1 {
+        font-size: 24px;
+    }
+
+    .forth {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .subject {
+        display: block;
+        text-align: center;
+    }
+
+    .subject li {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .rows button {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .director img {
+        width: 100%;
+        height: auto;
+    }
+
+    .main {
+        grid-template-columns: 1fr; 
+    }
+
+    .square {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer1,
+    .footer2,
+    .footer3 {
+        margin: 5px 0;
+    }
+
+    .last {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .column, .column1, .column2, .column3 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+          
+          
+           
+          
+         
+        
+       
+    </style>
+</head>
+<body>
+   <div class="nav">
+    <div class="feed">
+        <img src="facebook-01-solid-rounded.svg" alt="">
+        <img src="instagram-twotone-rounded.svg" alt="">
+    </div>
+    <div class="alphabet">
+       <button> <div class="rectangle">Screen Recorder</div></button>
+       <span>A</span>
+       <button><span>A</span></button>
+       <!-- <div class="rectangle1"> -->
+       <span>A-</span>
+            <span>A</span>
+                <span>A+</span>
+      
+    </div>
+   
+        
+
+      
+    </div>
+    <div class="second">
+        <div class="logo" ><img src="rgpv-logo.jpg" alt=""></div>
+    
+    <div class="clgname">
+        <h2>UNIVERSITY INSTITUTE OF TECHNOLOGY, BHOPAL</h2>
+    <h4>Constituent College of RGPV, NAAC "A" graded Technological University</h4>
+        <h4>Narsingharh By Pass Road Near Gandhi Nagar, Bhopal (M.P) </h4>
+    </div>
+</div>
+
+    <div class="third">
+        <li>HOME</li>
+        <li>ABOUT US</li>
+        <li>DEPARTMENTS</li>
+        <li>ADMISSION</li>
+        <li>ACADEMICS</li>
+        <li>EXAMINATION</li>
+        <li>STUDENT LIFE</li>
+        <li>FACULTY</li>
+        <li>PLACEMENT </li>
+        <li>CONTACT US</li>
+ 
+</div>
+<div class="photos">
+    <img src="rgpv class.jpg" alt="">
+
+</div>
+
+    <div class="welcome">
+        <h1> Welcome to</h1>
+        <h2> University Institute Of Technology, Bhopal</h2></div>
+        <div class="forth">
+       
+        <div class="paras">
+        <p>
+            
+            UIT-RGPV, Bhopal is a community of teachers, staff &amp; students, who are dedicated to the achievement of a shared vision of excellence. The community believes in renewing and transferring knowledge &amp; skills and the development of positive &amp; purposeful attitudes and values. Being in the campus of the State Technological University, the UIT-RGPV is in a position to offer excellent and high quality academic services to the students.
+                            
+        </p>
+        <p>
+            
+            The Institution is situated in Bhopal, a city well known for its natural beauty &amp; lakes. The city is well connected to the other parts of the country, by air, rail, and road. The large number of industries situated in and around Bhopal, provide excellent training opportunities to the students and staff.
+                            
+        </p></div>
+        
+    </div>
+    <div class="info">
+
+        
+    <button><div class="box ">
+        <span>B</span> Brochure</div></button> 
+    <button><div class="box"><span>E</span>E-Library</div></button> 
+    <button>  <div class="box"><span>D</span>Departmental Magzine</button> 
+   <button> <div class="box"><span>A</span>Alumni</div></button>
+
+</div>
+</div>
+<div class="container">
+    <div class="part">
+        <h1>Academics & Departments
+        </h1>
+        <div><h5>
+            Bachelor of Technology in information technology this course was started in the year 1999 with an intake of 60 students. The mission of department to continuously strive for the total development of students by educating them in latest technologies and helping them imbibe professional qualities ethics and societal commitment so that they emerge as competent professional to meet the global challenges and take as a developed country.</h5>
+        </div>
+        <!-- <div class="chemical"> -->
+        <div class="img">
+            <img src="mech_img.jpg" alt="">
+            <img src="aids_img.jpg" alt="">
+            <img src="math_img.jpg" alt="">
+            <img src="homescience_img.jpg" alt="">
+            <!-- <img src="electronics_img.jpg" alt="">
+            <img src="electrical_img.jpg" alt=""> -->
+        <!-- </div> -->
+            <div class="subject">
+                <li><h2>mechanical engineer</h2></li>
+                <li><h2>automobile engineer </h2></li>
+                <li><h2>applied mathematics</h2></li>
+                <li><h2>humanities</h2></li>
+          
+               
+        
+    </div>
+
+        </div>
+    </div>
+    <div class="rows">
+        <button> <div class="boxes">Companies
+            Placement in UIT-RGPV</div></button>
+            <button><div class="boxes">Programmes
+            Courses avaiable in UIT-RGPV</div></button>
+            <button><div class="boxes">Placements
+            Offered in UIT-RGPV</div>
+            <button> <div class="boxes">Projects,
+            Achieved by UIT-RGPV</div></button>
+
+</div>
+</div>
+<div class="message">
+    <div class="director">
+    
+    <h2>  Message from the Director</h2>
+    
+    <p>
+      
+UIT is an institution with unconditional commitment and total dedication for the cause of development of technical education in the country. This institution is one of the leading institute of central India that aims at producing competent engineers who can contribute in bringing this nation to a greater height. Through this portal of UIT-RGPV I call upon all the stake holders to help this Institute to achieve this goal. I hope that my Dear students will extend their full support in maintaining discipline & decorum in the Institution and will refrain from mass absenteeism & ragging with your support, I am sure we will very soon convert this Institution in to a world class Academic Institution of Excellence.
+    </p> </div>
+    <div class="director">
+        <img src="director2.jpg" alt=""><div> Dr.Sudhir Singh Bhadauria
+        Director UIT- RGPV    </div>
+    </div>
+</div>
+
+
+<div class="container2">
+    <div class="heading">
+        <div><h2>
+            Latest Updates
+        </h2></div>
+    </div>
+    <div class="main">
+        <div class="square"><img src="gallery_img3.jpg" alt=""></div>
+        <div class="square">Gallery
+            <div>View Gallery</div></div>
+        <div class="square"><img src="news_img.jpg" alt=""></div>
+        <div class="square">News</div>
+      
+        <div class="square"><h2>Miscellaneous</h2>
+            Placement record 2019-20, 2020-21, 2021-22.
+            Abstract of UIT-RGPV Budget
+            Hostel Information
+            Empanelment of Adjunct Faculty</div>
+        <div class="square"><img src="event_img.jpg" alt=""></div>
+        <div class="square">Viksit Bharat@2047
+        </div>
+        <div class="square"><img src="announcemnts.jpg" alt=""></div>
+    </div>
+</div>
+       <div class="front">
+        <div class="rgpv">
+<!--           
+          <img src="slide_b2.jpg" alt=""> -->
+        </div>
+
+        <div class="line">
+            <div class="line-text">
+            <h1 >Infrastructure and Facilities</h1>
+        
+           <div>
+    The Training & Placement Office, UIT Bhopal facilitates the process of placement of students passing out from the Institute besides collaborating with leading organizations and institutes in setting up of internship and training program of students.</div>
+</div>
+</div>
+</div>
+
+ <div class="final">
+<div class="last">
+    <div class="column"><h2>Examination</h2>
+        <li>Result</li>
+        <li>Academic Calender</li>
+        <li>Exam Time Table</li>
+        <li>Schemes</li>
+        <li>NCC Notice & Syllabus</li>
+    </div>
+
+    <div class="column1"><h2>Other Links
+        
+       </h2>
+        <li> Audit Report</li>
+        <li>A Photo Gallery</li>
+        <li> Bus Information</li>
+        <li> RTI</li>
+        <li>Important Links</li>
+        <li> Anti Ragging</li>
+    </div>
+
+    <div class="column2"><h2> Help & Support
+        
+    </h2>
+     <li>  NIRF Rank</li>
+     <li>  Technical Support Call - 8989205805</li>
+     <li> Support E-Mail - support@uitrgpv.ac.in</li>
+
+    </div>
+   
+    </div>
+    <div class="column3">
+
+   <h2>Get in Touch With Us</h2>
+    <li> <span><img src="map-pinpoint-01-solid-standard.svg" alt=""></span>Narsingharh By pass Road, Near Gandhi Nagar, Bhopal M.P</li>
+        <li><span><img src="message-01-solid-rounded.svg" alt=""></span>  uit_director@rgpv.ac.in</li>
+            <li><span><img src="call-ringing-04-solid-rounded.svg" alt=""></span> +(91)-(755)-2678812</li>
+                <li><span><img src="call-ringing-04-solid-rounded.svg" alt=""></span> +(91)-(755)-2678819</li>
+            </div>
+            <div class="column4">
+            
+            </div>
+   
+   
+  
+    
+</div>
+<div class="footer">
+    <div class="footer1">
+        © 2025 UIT-RGPV . All Rights Reserved
+    </div>
+    <div class="footer2">Disclaimer / Privacy Policy / Sitemap</div>
+    <div class="footer3">Design and Developed by CRISP</div>
+</div>
+</body>
+</html>
